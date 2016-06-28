@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+
+.container h1{
+	font-size:64px;
+	font-family: Cantarell;
+	text-shadow:0 5px 0 rgba(0,0,0,0.3);
+}
+
+#top{margin-top:50px;}
+
+input.ng-invalid {
+    background-color:lightblue;
+}
+
+input.ng-valid {
+    background-color:lightpink;
+}
+
+#widget{
+	height:270%;
+	width:65%;
+	background-image:url('2.jpg');
+	color:#fff;
+	margin-top:30%;
+	margin-left:20%;
+}
+
+#widget h3{
+	font-size:35px;
+	font-family:'Cookie', cursive;
+	margin-top:70px;
+}
+
+#widget p{
+	font-size:15px;
+	font-family:'Cookie', cursive;
+}
+
+#btnn{
+	margin-left:62%;
+}
+
+img{
+	border:1px solid white;
+}
+
+#widget h4{
+	margin-top:30px;
+	font-size:25px;
+	font-family:'Cookie', cursive;
+}
+

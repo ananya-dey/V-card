@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>V-Card</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">	
+	<link rel="stylesheet" href="v-card.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myctrl">
+
+<div class="container">
+<h1 class="text-center">V-Card</h1>
+	<div class="row" id="top" >
+		<div class="col-sm-4">	
+			<form name="myForm" role="form">
+				<div class="form-group">
+					<label for="myName">Name:</label>
+					<input type="text" class="form-control" id="myName" name="myName" ng-model="myName" required>
+				</div>
+				<div class="form-group">
+					<label for="designation">Designation:</label>
+					<input type="text" class="form-control" id="designation" name="designation" ng-model="designation" required>
+				</div>
+				<div class="form-group">
+					<label for="company">Company:</label>
+					<input type="text" class="form-control" id="company" name="company" ng-model="company" required>
+				</div>
+				<div class="form-group">
+					<label for="o_address">Office Address:</label>
+					<input type="text" class="form-control" id="o_address" name="o_address" ng-model="o_address" required>
+				</div>
+				<div class="form-group">
+					<label for="website">Website:</label>
+					<input type="text" class="form-control" id="website" name="website" ng-model="website" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="text" class="form-control" id="email" name="email" ng-model="email" placeholder="example@mail.com" required>
+				</div>
+				<div class="form-group">
+					<label for="skype">Skype:</label>
+					<input type="text" class="form-control" id="skype" name="skype" ng-model="skype" required>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone no:</label>
+					<input type="number" class="form-control" id="phone" name="phone" ng-model="phone" required>
+				</div>
+			</form>
+		</div>
+		<div class="col-sm-8">
+		  <form name="myForm1" role="form">
+			<div class="row"  id="widget">
+				<div class="col-sm-7">
+					<div class="text-left">
+						<h4>{{company}}</h4>						
+						<p>Address: {{o_address}}</p>
+						<p>URL: {{website}}</p>
+						<p>Email: {{email}}</p>
+						<p>Skype: {{skype}}</p>
+						<p>Mobile: {{phone}}</p>				
+					</div>
+				</div>
+				<div class="col-sm-5">						
+					<h3>{{myName}}</h3>
+					<p>{{designation}}</p>					
+				</div>
+			</div></br>
+			<div id="btnn">
+				<button type="button" class="btn btn-primary" ng-click="btnSave()" >Save as PNG</button>
+			</div>			
+		  </form>		  
+		</div>
+			<div id="img-out"></div>			
+	</div>
+</div>
+
+<footer>
+	<span>{{msg}}</span>
+</footer>
+
+
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="JS/html2canvas.js"></script>
+	<script src="JS/base64.js"></script>
+	<script src="JS/canvas2image.js"></script>
+	<script src="JS/v-card.js"></script>
+</body>
+</html>
